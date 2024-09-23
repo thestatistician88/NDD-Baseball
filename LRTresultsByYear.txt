@@ -1,0 +1,27 @@
+#################### Overall Data ###############################
+> LRT_root[1] 2.911655> pchisq(LRT_root, 2, lower.tail=FALSE)[1] 0.2332073
+> LRT_layer2[1] 18.67843> pchisq(LRT_layer2, 2, lower.tail=FALSE)[1] 8.790853e-05> LRT_layer3[1] 6.732474> pchisq(LRT_layer3, 2, lower.tail=FALSE)[1] 0.03451928> LRT_layer4[1] 101.8647> pchisq(LRT_layer4, 2, lower.tail=FALSE)[1] 7.592218e-23
+
+> LRT_layer5[1] 8.5687> pchisq(LRT_layer5, 2, lower.tail=FALSE)[1] 0.01378258> alpha1       S1        S2 0.5551855 7.2951362 > alpha2[1] 0.8553524 0.5811842> alpha3[1] 2.2494146 0.7983419> alpha4[1] 0.6647913 0.2776552> alpha5[1] 1.0969504 0.6670106> alpha1/sum(alpha1)        S1         S2 0.07072137 0.92927863 > alpha2/sum(alpha2)[1] 0.5954268 0.4045732> alpha3/sum(alpha3)[1] 0.7380559 0.2619441> alpha4/sum(alpha4)[1] 0.7053889 0.2946111> alpha5/sum(alpha5)[1] 0.6218677 0.3781323
+
+#################### 2000 Data ###############################
+> LRT_root[1] 3.599618> pchisq(LRT_root, 2, lower.tail=FALSE)[1] 0.1653305
+
+> LRT_layer2[1] 0.1292631> pchisq(LRT_layer2, 2, lower.tail=FALSE)[1] 0.9374128
+
+> LRT_layer3[1] 20.78083> pchisq(LRT_layer3, 2, lower.tail=FALSE)[1] 3.072553e-05
+
+> LRT_layer4[1] 19.28812> pchisq(LRT_layer4, 2, lower.tail=FALSE)[1] 6.48094e-05
+
+> LRT_layer5[1] 7.415788> pchisq(LRT_layer5, 2, lower.tail=FALSE)
+[1] 0.02452912> alpha1       S1        S2 0.5798987 7.8333823 > alpha2[1] 0.8809542 0.6499358> alpha3[1] 1.7587679 0.7378151> alpha4[1] 0.8334843 0.3107318> alpha5[1] 1.0679389 0.6649075> alpha1/sum(alpha1)        S1         S2 0.06892659 0.93107341 > alpha2/sum(alpha2)[1] 0.5754523 0.4245477> alpha3/sum(alpha3)[1] 0.70447 0.29553> alpha4/sum(alpha4)[1] 0.7284326 0.2715674> alpha5/sum(alpha5)[1] 0.6162917 0.3837083
+
+#################### 2005 Data ###############################
+> LRT_root[1] 6.513734> pchisq(LRT_root, 2, lower.tail=FALSE)[1] 0.03850886> LRT_layer2[1] 38.73471> pchisq(LRT_layer2, 2, lower.tail=FALSE)[1] 3.880285e-09> LRT_layer3[1] 6.321669> pchisq(LRT_layer3, 2, lower.tail=FALSE)[1] 0.04239036
+
+> LRT_layer4[1] 1.139842> pchisq(LRT_layer4, 2, lower.tail=FALSE)[1] 0.5655702
+
+> LRT_layer5[1] 2.315393> pchisq(LRT_layer5, 2, lower.tail=FALSE)[1] 0.3142092> alpha1       S1        S2 2.1553942 0.8462546 > alpha2[1]  0.2368607 23.9104754> alpha3[1] 2.4091744 0.7452767> alpha4[1] 1.2761714 0.7530103> alpha5[1] 0.4632099 0.9880673> alpha1/sum(alpha1)       S1        S2 0.7180701 0.2819299 > alpha2/sum(alpha2)[1] 0.00980898 0.99019102> alpha3/sum(alpha3)[1] 0.7637381 0.2362619> alpha4/sum(alpha4)[1] 0.6289094 0.3710906> alpha5/sum(alpha5)[1] 0.319174 0.680826
+
+#################### 2010 Data ###############################
+> LRT_root[1] 17.83069> pchisq(LRT_root, 2, lower.tail=FALSE)[1] 0.0001343122> LRT_layer2[1] 4.587495> pchisq(LRT_layer2, 2, lower.tail=FALSE)[1] 0.1008877> LRT_layer3[1] 3.180723> pchisq(LRT_layer3, 2, lower.tail=FALSE)[1] 0.2038519> LRT_layer4[1] 6.470308> pchisq(LRT_layer4, 2, lower.tail=FALSE)[1] 0.03935415> LRT_layer5[1] 8.807188> pchisq(LRT_layer5, 2, lower.tail=FALSE)[1] 0.01223329> alpha1       S1        S2 0.5430871 6.5558936 > alpha2[1] 0.9326298 0.5920148> alpha3[1] 2.4623614 0.8125796> alpha4[1] 0.6552863 0.2963812> alpha5[1] 1.0646239 0.7021297> alpha1/sum(alpha1)        S1         S2 0.07650212 0.92349788 > alpha2/sum(alpha2)[1] 0.6117031 0.3882969> alpha3/sum(alpha3)[1] 0.7518796 0.2481204> alpha4/sum(alpha4)[1] 0.6885664 0.3114336> alpha5/sum(alpha5)[1] 0.6025877 0.3974123
