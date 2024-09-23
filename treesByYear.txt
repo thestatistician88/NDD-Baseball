@@ -1,0 +1,33 @@
+# results of treeFinder algorithm for Year 2000 data.
+# I rearranged the columns so that the first 6 would be outcomes
+# They are 1 = HR, 2 = Triple, 3 = Double, 4 = Single, 5 = Out, and 6 = Other
+# The ageGroup column is column 7
+
+
+treeAll <- complete.bin.tree(batter.dat[,1:6])tree2010 <- complete.bin.tree(batter2010[,1:6])tree2000 <- complete.bin.tree(batter2000[,1:6])tree2005 <- complete.bin.tree(batter2005[,1:6])
+> treeAll
+## First split is HR, T, D and Other on right and S & Out on left
+## No further split to S and Out
+## Other splits off from HR, T, D 
+## Double splits off from HR and T - both HR and T should have the same sign correlation with D
+     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    6    0    0    0    0    0[4,]    1    2    3    0    0    0[5,]    3    0    0    0    0    0[6,]    1    2    0    0    0    0
+> tree2000
+## First split is HR, T, and D on right and S, Out, and Other on left
+## Out splits off from S and Other - both S and Other should have the same sign correlation with Out
+## Double splits off from HR and T - both HR and T should have the same sign correlation with D
+     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    6    0    0    0 - left split[2,]    1    2    3    0    0    0 - right split[3,]    5    0    0    0    0    0 - left split from row 1[4,]    4    6    0    0    0    0 - right split from row 1[5,]    3    0    0    0    0    0 - left split from row 2[6,]    1    2    0    0    0    0 - right split from row 2
+
+> tree2005
+## First split is Triple and Out to left; HR, D, S, and Other to right
+## Second split from right node is S and Other to left; HR and T to right.
+## This means that T and Out should be negatively correlated
+### HR, D, S, and Other should be positively correlated
+### HR and D should are positively correlated
+### Single and Other are negatively correlated     [,1] [,2] [,3] [,4] [,5] [,6][1,]    2    5    0    0    0    0 - left split[2,]    1    3    4    6    0    0 - right split[3,]    4    6    0    0    0    0 - left split from row 2[4,]    1    3    0    0    0    0 - right split from row 2
+# only 4 rows because there is no further split from row 1.
+
+> tree2010## First split is HR, T, and D on left and S, Out, and Other on right
+## Out splits off from S and Other - both S and Other should have the same sign correlation with Out
+## Double splits off from HR and T - both HR and T should have the same sign correlation with D     [,1] [,2] [,3] [,4] [,5] [,6][1,]    1    2    3    0    0    0 - left split[2,]    4    5    6    0    0    0 - right split[3,]    3    0    0    0    0    0 - left split from row 1[4,]    1    2    0    0    0    0 - right split from row 1[5,]    5    0    0    0    0    0 - left split from row 2[6,]    4    6    0    0    0    0 - right split from row 2
+
+> tree2009     [,1] [,2] [,3] [,4] [,5] [,6][1,]    1    2    3    0    0    0[2,]    4    5    6    0    0    0[3,]    3    0    0    0    0    0[4,]    1    2    0    0    0    0[5,]    5    0    0    0    0    0[6,]    4    6    0    0    0    0> tree2008     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    1    2    0    0    0    0[4,]    3    6    0    0    0    0> tree2007     [,1] [,2] [,3] [,4] [,5] [,6][1,]    1    2    3    0    0    0[2,]    4    5    6    0    0    0[3,]    3    0    0    0    0    0[4,]    1    2    0    0    0    0[5,]    5    0    0    0    0    0[6,]    4    6    0    0    0    0> tree2006     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    6    0    0    0    0    0[4,]    1    2    3    0    0    0[5,]    3    0    0    0    0    0[6,]    1    2    0    0    0    0> tree2005     [,1] [,2] [,3] [,4] [,5] [,6][1,]    2    5    0    0    0    0[2,]    1    3    4    6    0    0[3,]    4    6    0    0    0    0[4,]    1    3    0    0    0    0> tree2004     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    6    0    0    0[2,]    1    2    3    0    0    0[3,]    5    0    0    0    0    0[4,]    4    6    0    0    0    0[5,]    3    0    0    0    0    0[6,]    1    2    0    0    0    0> tree2003     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    6    0    0    0    0    0[4,]    1    2    3    0    0    0[5,]    3    0    0    0    0    0[6,]    1    2    0    0    0    0> tree2002     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    1    6    0    0    0    0[4,]    2    3    0    0    0    0> tree2001     [,1] [,2] [,3] [,4] [,5] [,6][1,]    4    5    0    0    0    0[2,]    1    2    3    6    0    0[3,]    1    6    0    0    0    0[4,]    2    3    0    0    0    0
