@@ -1,5 +1,5 @@
 # Nested Dirichlet Analysis for MLB Plate Appearance Data
-Last update 09-22-2024
+Last update 09-23-2024
 
 Files included:
 
